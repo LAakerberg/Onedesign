@@ -1,3 +1,4 @@
+let title = document.querySelector("title");
 const mainContent = document.querySelector(".main");
 const portfolioSpecific = document.querySelector(".portfolio-spec");
 const projectContent = document.querySelector(".project-content");
@@ -8,6 +9,8 @@ const id = params.get("id");
 import { portfolio } from "./data/portfolio-data.js";
 
 const url = "details.html?id=" + id;
+
+title.innerHTML = `Onedesign | ${portfolio[id].name}`;
 
 portfolioSpecific.innerHTML += `
 
