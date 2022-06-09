@@ -41,6 +41,7 @@ export function importProject() {
       for (let i = 0; i < portfolio.length; i++) {
         if (portfolio[i].inProgress === true) {
           projectContent.innerHTML += `
+          <a href="details.html?id=${portfolio[i].id}" class="product-link">
             <div class="product-card">
             <div class="product-image">
               <img src="${portfolio[i].imgThumb}" />
@@ -50,7 +51,8 @@ export function importProject() {
               <h4>${portfolio[i].name}</h4>
               <p>${portfolio[i].descriptions}</p>
             </div>
-          </div>`;
+          </div>
+          </a>`;
         }
       }
     } catch (error) {
