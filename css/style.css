@@ -282,6 +282,8 @@ main {
     max-height: 180px;
 }
 
+/* Details / Specific page of portfolio */
+
 .product-big {
     border-radius: 10px;
     margin: 15px;
@@ -323,10 +325,56 @@ main {
     padding: 10px;
 }
 
+span {
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.product-big li {
+    padding: 8px;
+    text-align: center;
+    display: block;
+}
+
 /* Footer style */
 
 footer {
+    padding-top: 20px;
     border-top: 1px solid gray;
     height: 90px;
     border-radius: 0px 0px 10px 10px;
 }
+
+.footer-text {
+    font-family: "SquadaOne";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #003545;
+}
+
+.footer-memo {
+    font-family: "Merienda-Regular";
+    font-size: 1em;
+    font-style: italic;
+    text-transform:capitalize;
+    color: #003545;
+}
+
+
+.material-icons {
+    padding: 0px;
+}
+
+.icon {
+    font-size: 36px;
+}
+
+.github {
+    padding-left: 3px;
+}
+
+
+/* .github:hover {
+    background-image: url("/assets/GitHub-Mark-64px.png");
+} */

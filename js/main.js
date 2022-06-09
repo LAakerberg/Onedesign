@@ -1,4 +1,5 @@
 const heading = document.querySelector(".heading");
+const footer = document.querySelector(".copy");
 
 heading.innerHTML += `
 <div class="topping">
@@ -11,7 +12,6 @@ heading.innerHTML += `
           <div class="sidemenu"></div>
         </div>
         <button class="hamburger">
-        <!-- material icons https://material.io/resources/icons/ -->
         <i class="menuIcon material-icons">menu</i>
         <i class="closeIcon material-icons" style="display: none">close</i>
       </button>
@@ -51,3 +51,10 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+footer.innerHTML += `
+<div class="logo">
+<p class="footer-text">Onedesign</p>
+<p class="footer-memo">&copy; 2022 Onedesign</p>
+</div>
+`;

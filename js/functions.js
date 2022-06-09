@@ -14,7 +14,7 @@ export function importPortfolio() {
           <a href="details.html?id=${portfolio[i].id}" class="product-link">
           <div class="product-card">
           <div class="product-image">
-            <img src="${portfolio[i].imgThumb}" />
+            <img src="${portfolio[i].imgThumb}" alt="Picture of the project ${portfolio[i].name}" />
           </div>
           <div class="breaker"></div>
           <div class="product-text">
@@ -44,7 +44,7 @@ export function importProject() {
           <a href="details.html?id=${portfolio[i].id}" class="product-link">
             <div class="product-card">
             <div class="product-image">
-              <img src="${portfolio[i].imgThumb}" />
+              <img src="${portfolio[i].imgThumb}" alt="Picture of the project ${portfolio[i].name}" />
             </div>
             <div class="breaker"></div>
             <div class="product-text">
