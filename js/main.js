@@ -2,10 +2,12 @@ const heading = document.querySelector(".heading");
 
 heading.innerHTML += `
 <div class="topping">
+        <a href="index.html" class="logo-link">
           <div class="logo">
             <p class="logo-text">Onedesign</p>
             <p class="logo-memo">Only one design needed</p>
           </div>
+        </a>
           <div class="sidemenu"></div>
         </div>
         <button class="hamburger">
