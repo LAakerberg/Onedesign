@@ -13,7 +13,7 @@ const url = "details.html?id=" + id;
 
 title.innerHTML = `Onedesign | ${portfolio[id].name}`;
 
-portfolioTitle.innerHTML += `${portfolio[id].title}`;
+portfolioTitle.innerHTML = ` ${portfolio[id].title}`;
 
 portfolioSpecific.innerHTML += `
 
