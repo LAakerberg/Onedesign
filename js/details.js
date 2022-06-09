@@ -15,7 +15,7 @@ title.innerHTML = `Onedesign | ${portfolio[id].name}`;
 
 portfolioTitle.innerHTML = ` ${portfolio[id].title}`;
 
-portfolioSpecific.innerHTML += `
+portfolioSpecific.innerHTML = `
 
             <div class="product-big">
             <div class="product-bigimage">
