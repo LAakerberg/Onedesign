@@ -282,6 +282,10 @@ main {
     max-height: 180px;
 }
 
+.product-text p {
+    padding-top: 8px;
+}
+
 /* Details / Specific page of portfolio */
 
 .product-big {
