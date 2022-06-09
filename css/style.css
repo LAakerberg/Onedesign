@@ -1,0 +1,270 @@
+/* Fonts */
+
+@import "./fonts.css";
+
+
+/* Global style sheet */
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0px auto;
+    background-size: 10%;
+    background: linear-gradient(to bottom, rgb(173, 173, 173) 0px,  rgb(243, 243, 243) 250px,
+     rgb(0, 112, 164) 250px, rgb(0, 78, 114) 300px,
+     rgb(243, 243, 243) 300px, rgb(255, 255, 255) 100%);
+}
+
+ header, main, footer {
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+
+h1, h2, h3, h4 {
+    font-family: "Merienda-Regular";
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2em;
+}
+    
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    font-family: "Merienda-Regular";
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Header style */
+
+header {
+    background-color: aliceblue;
+    height: 280px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.topping {
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: "SquadaOne";
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #003545;
+    cursor: pointer;
+}
+
+.logo-memo {
+    font-family: "Merienda-Regular";
+    font-size: 1.2em;
+    font-style: italic;
+    text-transform:capitalize;
+    color: #003545;
+}
+
+.sidemenu {
+    flex: 0;
+}
+
+.nav-menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(0, 112, 164);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+nav {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav li {
+    font-family: "SquadaOne";
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding: 0px 40px;
+    margin: 0px 10px;
+    color: #fff;
+    border: 1px solid #007396;
+    transition: 0.2s ease-in-out;
+    width: 100px;
+    display: block;
+}
+
+nav li:hover {
+    color: rgb(191, 236, 255);
+    border: 1px solid #fff;
+    transition: 0.2s ease-in;
+}
+
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #ffffff;
+    }
+    50% {
+      box-shadow: 0 0 20px #e4e4e4;
+    }
+    100% {
+      box-shadow: 0 0 5px #cccccc;
+    }
+  }
+nav li:hover {
+    animation: glowing 1500ms infinite;
+  }
+
+  /* Hamburger menu style */
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 16rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+    width: 60px;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  .nav-link {
+      text-decoration: none;
+  }
+
+/* Main style */
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+.introduction {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.content-header {
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.content-header h3 {
+    padding-left: 20px;
+}
+
+.portfolio-content, .project-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+/* Portfolio / Product card design */
+
+.product-card {
+    border-radius: 10px;
+    margin: 15px;
+    width: 280px;
+    height: 400px;
+    background: linear-gradient(to bottom, rgb(173, 173, 173) 0%,  rgb(243, 243, 243) 75%);
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    border-radius: 10px;
+    margin: 15px;
+    width: 280px;
+    height: 400px;
+    background: linear-gradient(to top, rgb(182, 182, 182) 0%,  rgb(233, 233, 233) 75%);
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    border-radius: 5px;
+/*     background-color: #cccccc; */
+    margin-top: 5px;
+    width: 95%;
+    height: 200px;
+}
+
+.product-image img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.breaker {
+    width: 95%;
+    height: 2px;
+    background-color: #d79d9d;
+    margin: 4px 0px;
+}
+
+.product-text {
+    text-align: center;
+    width: 95%;
+    max-height: 180px;
+}
+
+/* Footer style */
+
+footer {
+    border-top: 1px solid gray;
+    height: 90px;
+    border-radius: 0px 0px 10px 10px;
+}
