@@ -11,16 +11,18 @@ export function importPortfolio() {
         const text = portfolio[i].descriptions.slice(0, 235);
         if (portfolio[i].completed === true) {
           portfolioContent.innerHTML += `
+          <a href="details.html?id=${portfolio[i].id}" class="product-link">
           <div class="product-card">
           <div class="product-image">
-            <img src="${portfolio[i].img}" />
+            <img src="${portfolio[i].imgThumb}" />
           </div>
           <div class="breaker"></div>
           <div class="product-text">
             <h4>${portfolio[i].name}</h4>
             <p>${text}</p>
           </div>
-        </div>`;
+        </div>
+        </a>`;
         }
         console.log(portfolio[i].completed === true);
       }
@@ -41,7 +43,7 @@ export function importProject() {
           projectContent.innerHTML += `
             <div class="product-card">
             <div class="product-image">
-              <img src="${portfolio[i].img}" />
+              <img src="${portfolio[i].imgThumb}" />
             </div>
             <div class="breaker"></div>
             <div class="product-text">
