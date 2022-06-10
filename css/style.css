@@ -341,6 +341,38 @@ span {
     display: block;
 }
 
+/* About */
+
+.container {
+    height: 100%;
+}
+
+.about p {
+    text-align: left;
+}
+
+.about-img {
+    border-radius: 400px;
+    width: 30%;
+}
+
+.about-pic {
+    text-align: center;
+}
+
+.about-icon {
+
+}
+
+.profile-icon li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.in {
+    width: 36px;
+}
+
 /* Footer style */
 
 footer {

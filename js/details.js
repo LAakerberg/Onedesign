@@ -26,7 +26,7 @@ portfolioSpecific.innerHTML = `
               <h3>${portfolio[id].name}</h3>
               <p>${portfolio[id].descriptions}</p>
             </div>
-            <div class="">
+            <div class="profile-icon">
             <li><a href="${portfolio[id].urlGithub}" class="product-link" target="_blank"><img src="assets/GitHub-Mark-32px.png" class="github" /></a><p>Github</p></li>
             <li><a href="${portfolio[id].url}" class="product-link" target="_blank"><span class="material-icons icon">web</span></a><p>Homepage</p></li>
             </div>
