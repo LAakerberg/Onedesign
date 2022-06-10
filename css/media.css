@@ -1,9 +1,18 @@
+@media screen and (min-width: 550px) {
+    .about-img {
+        width: 40%;
+    }
+}
+
 @media screen and (min-width: 700px) {
     header, main, footer {
         width: 90%;
     }
     .hamburger {
         right: 3rem;
+    }
+    .about-img {
+        width: 30%;
     }
 }
 
