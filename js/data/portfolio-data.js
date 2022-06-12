@@ -9,7 +9,7 @@ export const portfolio = [
                         some Javascript included in the programming`,
     imgThumb: "/image/Rainydays-onedesign.jpg",
     imgHigh: "/image/Rainydays-high.jpg",
-    url: "https://incandescent-biscochitos-c68324.netlify.app/jackets.html",
+    url: "https://incandescent-biscochitos-c68324.netlify.app/",
     urlGithub: "https://github.com/LAakerberg/cross-course-cms-ca",
     completed: true,
     inProgress: false,
