@@ -31,7 +31,6 @@ export function importPortfolio() {
       <p>The content could not be loaded, please try again later...</p>
     </div>
     `;
-      console.log(error);
     }
   }
 
@@ -64,7 +63,6 @@ export function importProject() {
       <p>The content could not be loaded, please try again later...</p>
     </div>
     `;
-      console.log(error);
     }
   }
 
