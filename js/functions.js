@@ -24,11 +24,13 @@ export function importPortfolio() {
         </div>
         </a>`;
         }
-        console.log(portfolio[i].completed === true);
       }
     } catch (error) {
-      portfolioContent.innerHTML = `Could not run the content`;
-      console.log(error);
+      portfolioContent.innerHTML = `
+      <div class="error">
+      <p>The content could not be loaded, please try again later...</p>
+    </div>
+    `;
     }
   }
 
@@ -56,8 +58,11 @@ export function importProject() {
         }
       }
     } catch (error) {
-      projectContent.innerHTML = `Could not run the content`;
-      console.log(error);
+      projectContent.innerHTML = `
+      <div class="error">
+      <p>The content could not be loaded, please try again later...</p>
+    </div>
+    `;
     }
   }
 

@@ -33,6 +33,4 @@ portfolioSpecific.innerHTML = `
           </div>
 `;
 
-console.log(portfolio[id].name);
-console.log(portfolio[id].name);
 console.log(id);

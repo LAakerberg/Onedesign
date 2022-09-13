@@ -397,6 +397,7 @@ footer {
     color: #003545;
 }
 
+/* Icons */
 
 .material-icons {
     padding: 0px;
@@ -410,7 +411,12 @@ footer {
     padding-left: 3px;
 }
 
+/* Errors */
 
-/* .github:hover {
-    background-image: url("/assets/GitHub-Mark-64px.png");
-} */
+.error {
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: #fffeeb;
+    padding: 10px;
+    width: 50%;
+}
