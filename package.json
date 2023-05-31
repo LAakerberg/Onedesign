@@ -1,0 +1,15 @@
+{
+  "name": "onedesign",
+  "version": "0.0.1",
+  "description": "Onedesign portfolio version 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "onedesign",
+    "portfolio"
+  ],
+  "author": "Linus Aakerberg",
+  "license": "ISC"
+}
